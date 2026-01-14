@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+</head>
+
+<body style="grid-column: auto;">
+    <style>
+    .project-card {
+        display: flex; 
+        align-items: center; 
+        gap: 24px;              /* 이미지와 텍스트 사이 간격 */
+        padding: 20px;
+        border-bottom: 1px solid #eee; /* 구분선 */
+        
+    }
+    .project-card:hover {
+        background-color: #f9f9f9; /* 마우스 올렸을 때 효과 */
+    }
+    .project-img {
+        width: 150px; 
+        height: 100px;         /* 높이 고정 */
+        object-fit: cover;     /* 비율 유지하며 채우기 */
+        border-radius: 12px;   /* 부드러운 모서리 */
+        background-color: #eee;
+    }
+    .project-info {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;              /* 텍스트 줄 간격 */
+    }
+    .name { font-size: 18px; font-weight: 700; color: #333; }
+    .period { font-size: 14px; color: #888; }
+    .explanation { font-size: 15px; color: #555; margin-top: 4px; }
+</style>
+<div id="project-list">
+    <div class="project-card" style="display: flex; align-items: center;">
+        <div><img style="width: 150px;" src="./img/mathDino.png" alt=""></div>
+        <div class="project-info" style="margin-bottom: 40px;">
+            <div class="name">Iccas 2025 (Math Dino)</div>
+            <div class="period">2025.06 ~ 2025.08</div>
+            <div class="explanation">난산증 아동을 위한 게임 개발</div>
+        </div>
+    </div>
+    <div  class="project-card" style="display: flex; align-items: center;">
+        <div><img style="width: 150px;" src="./img/book.png" alt="book"></div>
+        <div class="project-info" >
+            <div class="name">도서 판매 시스템</div>
+            <div class="period">2024.08 ~ 2024.11</div>
+            <div class="explanation">기본적인 DB 활용 및 CRUD 웹 페이지 개발</div>
+        </div>
+    </div>
+    <div class="project-card" style="display: flex; align-items: center;">
+        <div><img style="width: 150px;" src="./img/image 6.png" alt=""></div>
+        <div class="project-info" >
+            <div class="name">제 12회 K-해커톤 (재활용 다이어리)</div>
+            <div class="period">2025.06 ~ 2025.08</div>
+            <div class="explanation">재활 환자를 위한 앱 프로토타입 개발</div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
+
+
+<!-- [
+    {
+    "name": "Iccas 2025 (Math Dino)",
+    "period": "2025.06 ~ 2025.08",
+    "explanation": "난산증 아동을 위한 게임 개발"
+    },
+    {
+    "name": "도서 판매 시스템",
+    "preiod": "2024.08 ~ 2024.11",
+    "explanation": "기본적인 DB 활용 및 CRUD 웹 페이지 개발"
+    },
+    {
+    "name": "제 12회 K-해커톤 (재활용 다이어리)",
+    "period": "2025.06 ~ 2025.08",
+    "explanation": "재활 환자를 위한 앱 프로토타입 개발"
+    }
+] -->
